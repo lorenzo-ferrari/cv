@@ -17,10 +17,16 @@
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
+\input{personalinfo}
+% personalinfo.tex:
+% \newcommand{\MyEmailAddress}{name.surname@whateverdomain.com}
+% \newcommand{\MyPhoneNumber}{+391112223333}
+% \newcommand{\MyPhoneNumberAsString}{(+39)~111~222~3333}
+
 \firstname{Lorenzo}
 \familyname{Ferrari}
-\phone[mobile]{(+39)~389~624~6920}
-\email{potassiopermanganato@gmail.com}
+\phone[mobile]{\MyPhoneNumberAsString}
+\email{\MyEmailAddress}
 \title{Curriculum Vitae}
 
 
@@ -38,8 +44,8 @@
 \section{Personal information}
 \cvitem{}{Lorenzo Ferrari}
 \cvitem{Born in}{Trento (Italy), April 4, 2004}
-\cvitem{Email}{\href{mailto:potassiopermanganato@gmail.com}{\texttt{potassiopermanganato@gmail.com}}}
-\cvitem{Phone}{\href{tel:+393896246920}{\texttt{(+39)~389~624~6920}}}
+\cvitem{Email}{\href{mailto:\MyEmailAddress}{\texttt{\MyEmailAddress}}}
+\cvitem{Phone}{\href{tel:\MyPhoneNumber}{\texttt{\MyPhoneNumberAsString}}}
 
 %----------------------------------------------------------------------------------------
 %   EDUCATION
@@ -69,7 +75,7 @@
 %----------------------------------------------------------------------------------------
 
 \section{Awards}
-\cvitem{2023--Present}{Full scolaship by Scuola Normale Superiore}{}
+\cvitem{2023--Present}{Full scolarship by Scuola Normale Superiore}{}
 \subsection{Informatics}
 \cventry{2020--2022}{National Olympiad in Informatics}{}{}{one silver and two gold medals (one first place)}{}
 \cventry{2022\footnotemark[1]}{International Olympiad in Informatics}{}{}{honourable mention}{}

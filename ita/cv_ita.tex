@@ -1,0 +1,130 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 11pt, sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{footmisc} % enabling footnotes.
+
+\usepackage[scale=0.75]{geometry}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\input{../personalinfo}
+% personalinfo.tex:
+% \newcommand{\MyEmailAddress}{name.surname@whateverdomain.com}
+% \newcommand{\MyPhoneNumber}{+391112223333}
+% \newcommand{\MyPhoneNumberAsString}{(+39)~111~222~3333}
+
+\firstname{Lorenzo}
+\familyname{Ferrari}
+\phone[mobile]{\MyPhoneNumberAsString}
+\email{\MyEmailAddress}
+\title{Curriculum Vitae}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\thispagestyle{empty}
+
+\makecvtitle
+
+%----------------------------------------------------------------------------------------
+%   PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Informazioni Personali}
+\cvitem{}{Lorenzo Ferrari}
+\cvitem{Nato a}{Trento (Italia), 4 Aprile 2004}
+\cvitem{Email}{\href{mailto:\MyEmailAddress}{\texttt{\MyEmailAddress}}}
+\cvitem{Telefono}{\href{tel:\MyPhoneNumber}{\texttt{\MyPhoneNumberAsString}}}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Educazione}
+\cventry{2023--}{Laurea triennale in Matematica}{Università di Pisa}{}{}{}
+\cventry{2023--}{Laurea in Matematica}{Scuola Normale Superiore}{Pisa}{}{}
+\cventry{2018--2023}{Maturità scientifica}{Liceo Scientifico ``G. Galilei''}{Trento}{100/100.}{}
+\cventry{2021--2022}{Anno all'estero in Danimarca}{AFS}{}{Rønne.}{}
+\cventry{2021--2023}{Selezione squadra IOI}{Olimpiadi di Informatica}{Italia e Danimarca.}{}{Campi di allenamento e selezione, lezioni (algoritmi avanzati, strutture dati, strategie di problem solving) e gare.}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Esperienza}
+\cventry{2023}{Huawei Italy Summer Camp}{Huawei Pisa Research Center}{Italia}{36 ore.}{Con la mia squadra alle Olimpiadi Italiane di Informatica a Square, design e implementazione di un sistema per assegnare risorse limitate a diversi utenti.}
+\cventry{2022--2023}{coderfarm-it}{Associazione Promozione Programmazione Competitiva}{}{45 ore.}{15 lezioni online per studenti di diverse scuole in Italia; tenevo le lezioni del \href{https://github.com/coderfarm-it/materiali/tree/main/corso-avanzato}{corso avanzato}.}
+\cventry{2022}{Huawei Summer Campus}{Huawei Zurich Research Center}{Svizzera}{80 ore.}{Con altri quattro partecipanti alle Olimpiadi Italiane di Informatica, design di algoritmi di approssimazione ispirati a problemi reali.}
+\cventry{2021}{CyberChallenge.IT}{University of Trento}{Trento}{72 ore.}{Partecipazione al programma di cybersecurity CyberChallenge.IT dopo il superamento di tre test con un tasso di ammissione complessivo del 13.70\%.}
+\cventry{2021}{Tutor di Informatica e Matematica}{Liceo Scientifico ``G. Galilei''}{Trento}{37+18 ore.}{Tutor per un corso di Programmazione Competitiva e uno di Matematica nella mia scuola.}
+\cventry{2020--2021}{Attività di volontariato}{Trentino Solidale}{Trento.}{}{Col mio gruppo scout, attività di volontariato nel programma ``Trentino Solidale'' durante l'intero anno.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Premi e riconoscimenti}
+\cvitem{2023--}{Borsa di studio omnicomprensiva, allievo ordinario presso la Scuola Normale Superiore}{}
+\subsection{Informatica}
+\cventry{2020--2022}{Olimpiadi Italiane di Informatica}{}{}{una medaglia d'argento e due medaglie d'oro (un primo posto ex aequo)}{}
+\cventry{2022\footnotemark[1]}{Olimpiadi Internazionali di Informatica}{}{}{menzione d'onore}{}
+\footnotetext[1]{Mi sono qualificato anche per le IOI23, non ho potuto partecipare a causa della sovrapposizione con i test di ammissione per l'università.}
+\cventry{2023}{Romanian Master of Informatics}{}{}{medaglia d'argento}{}
+\cventry{2023}{Balkan Olympiad in Informatics}{}{}{medaglia d'argento}{}
+\cventry{2022}{Baltic Olympiad in Informatics}{}{}{medaglia di bronzo}{}
+\cventry{2021,2023}{Olimpiadi di Informatica a Square}{}{}{un terzo posto e un primo posto}{}
+\cventry{2021,2023}{International Informatics Olympiad in Teams}{}{}{medaglia di bronzo}{}
+\subsection{Matematica}
+\cventry{2021,2023}{Olimpiadi di Matematica}{}{}{una medaglia di bronzo una medaglia d'argento}{}
+\cventry{2022}{Georg Mohr-Konkurrencen (Olimpiadi di Matematica danesi)}{}{}{primo posto ex aequo}{}
+\cventry{2022}{Nordic Mathematical Contest}{}{}{tredicesimo posto}{}
+\subsection{Miscellanea}
+\cventry{2021}{European Olympiad of Experimental Science}{}{}{prima squadra in Italia}{}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skill tecniche}
+\cvitem{Avanzato}{\textsc{C++}, Programmazione Competitiva}{}
+\cvitem{Intermedio}{\textsc{Python}, Linux, \LaTeX, \textsc{Git}}{}
+\cvitem{Base}{\textsc{CMake}, Cybersecurity, \textsc{SQLite}}{}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Lingue}
+\cvitemwithcomment{Italiano}{Madrelingua}{}
+\cvitemwithcomment{Inglese}{Avanazato}{Cambridge CAE Grade A, 2023}
+\cvitemwithcomment{Danese}{Intermedio-basso}{}
+\cvitemwithcomment{Tedesco}{Intermedio-basso}{Deutsches Sprachdiplom I, 2020}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS
+%----------------------------------------------------------------------------------------
+
+\iffalse
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\section{Interests}
+\cvlistdoubleitem{Competitive Programming}{Dungeons \& Dragons}
+\cvlistdoubleitem{Solving and Inventing Problems}{Ultimate Frisbee}
+\cvlistitem{Cryptography}
+\fi
+
+%----------------------------------------------------------------------------------------
+%	FOOTER
+%----------------------------------------------------------------------------------------
+\end{document}
